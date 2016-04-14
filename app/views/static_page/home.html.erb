@@ -1,0 +1,5 @@
+<div id="title">
+ <span style="font-family: <%= current_user.style_page.font_family unless current_user.style_page.nil? %>; font-size: <%= current_user.style_page.font_size unless  current_user.style_page.nil? %>; font-style: <%= current_user.style_page.font_style unless current_user.style_page.nil? %>; color: <%= current_user.style_page.font_color unless current_user.style_page.nil? %>"><%= @style_page.title unless @style_page.nil? %></span>
+</div>
+
+<%= render 'form' %>

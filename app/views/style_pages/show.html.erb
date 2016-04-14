@@ -1,0 +1,33 @@
+<div id="sd"><span style='font-family: "Arial Black"'>hhfgh</span></div>
+<%= current_user.style_page.title %><p id="notice"><%= notice %></p>
+
+<div class="bfh-selectbox bfh-fonts" data-font="Arial">
+</div>
+
+<p>
+  <strong>Title:</strong>
+  <%= @style_page.title %>
+</p>
+
+<p>
+  <strong>font_color:</strong>
+  <%= @style_page.font_color %>
+</p>
+
+<p>
+  <strong>font_style:</strong>
+  <%= @style_page.font_style %>
+</p>
+
+<p>
+  <strong>font_size:</strong>
+  <%= @style_page.font_size %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @style_page.user %>
+</p>
+
+<%= link_to 'Edit', edit_style_page_path(@style_page) %> |
+<%= link_to 'Back', style_pages_path %>
